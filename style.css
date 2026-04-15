@@ -1,0 +1,203 @@
+  /* The start of my CSS code */
+  /* ------------------------------
+   GLOBAL STYLES
+--------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: linear-gradient(to right, #eef2ff, #f5e8ff);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   NAVBAR
+--------------------------------*/
+.navbar {
+  background-color: #2d006b;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #d8b4ff;
+}
+
+/* ------------------------------
+   HERO SECTION
+--------------------------------*/
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #4b0082;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+/* ------------------------------
+   SECTIONS
+--------------------------------*/
+.section {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.section h2 {
+  text-align: center;
+  color: #4b0082;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* ------------------------------
+   ABOUT SECTION
+--------------------------------*/
+.profile {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile img {
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.profile p {
+  flex: 1;
+  font-size: 20px;
+}
+
+/* ------------------------------
+   CARDS (Projects, Resume, Favorites)
+--------------------------------*/
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  color: #4b0082;
+  margin-bottom: 10px;
+}
+
+/* ------------------------------
+   RESUME DOWNLOAD BUTTON
+--------------------------------*/
+.resume-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #4b0082;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+.resume-btn:hover {
+  background-color: #6a0dad;
+}
+
+/* ------------------------------
+   FAVORITES IMAGE
+--------------------------------*/
+.fav-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  margin: 15px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ------------------------------
+   CONTACT CARD
+--------------------------------*/
+.contact-card {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  font-size: 18px;
+}
+
+.contact-card p {
+  margin-bottom: 10px;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #777;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+--------------------------------*/
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile img {
+    width: 90%;
+  }
+
+  .navbar a {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+}
